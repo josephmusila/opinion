@@ -1,0 +1,4 @@
+ public function_construct(){
+        $this->db_handle=mysqli_connect($this->host,$this->uid,$this->pwd);//connect to mysql server
+        if(!$this->db_handle)die("unable to connect to MYSQL: ".mysqli_error());
+ }
